@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/font_blue">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/addManager_tip"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/font_blue">
+
+        <ImageView
+            android:id="@+id/addManager_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/addManager_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="微信数据中心"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wx_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="提交"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+            <!--微信附近人-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_default_WeChat_fujinren"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mydatacenter">
+
+                    <TextView
+                        style="@style/myTextStyle"
+                        android:text="微信附近人" />
+
+                    <ImageView style="@style/myRightImageStyle" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        style="@style/myChildTextStyle"
+                        android:inputType="number"
+                        android:text="  打招呼人数：" />
+
+                    <TextView
+                        android:id="@+id/wxNearby_num"
+                        style="@style/myChildTextStyle"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        style="@style/myChildTextStyle"
+                        android:inputType="number"
+                        android:text="  打招呼内容：" />
+
+                    <TextView
+                        android:id="@+id/wxNearby_content"
+                        style="@style/myChildTextStyle"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--微信一键加好友-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_default_WeChat_jiahaoyou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mydatacenter">
+
+                    <TextView
+                        style="@style/myTextStyle"
+                        android:text="微信一键加好友" />
+
+                    <ImageView style="@style/myRightImageStyle" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        style="@style/myChildTextStyle"
+                        android:inputType="number"
+                        android:text="  加好友人数：" />
+
+                    <TextView
+                        android:id="@+id/wxAddFriend_num"
+                        style="@style/myChildTextStyle"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--微信一键加群友-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_default_WeChat_jiaqunyou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mydatacenter">
+
+                    <TextView
+                        style="@style/myTextStyle"
+                        android:text="微信一键加群友" />
+
+                    <ImageView style="@style/myRightImageStyle" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+
+                <LinearLayout
+                    android:id="@+id/layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        style="@style/myChildTextStyle"
+                        android:inputType="number"
+                        android:text="  起始群：" />
+
+                    <TextView
+                        android:id="@+id/wxAddGroupFriend_num"
+                        style="@style/myChildTextStyle"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--微信公众号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_default_WeChat_gongzhonghao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mydatacenter">
+
+                    <TextView
+                        style="@style/myTextStyle"
+                        android:text="微信公众号" />
+
+                    <ImageView style="@style/myRightImageStyle" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+
+                <LinearLayout
+                    android:id="@+id/layout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        style="@style/myChildTextStyle"
+                        android:inputType="number"
+                        android:text="  从第几个公众号添加：" />
+
+                    <TextView
+                        android:id="@+id/wxPublic_index"
+                        style="@style/myChildTextStyle"
+                        android:text="" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        style="@style/myChildTextStyle"
+                        android:inputType="number"
+                        android:text="  推送公众号个数：" />
+
+                    <TextView
+                        android:id="@+id/wxPublic_num"
+                        style="@style/myChildTextStyle"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        style="@style/myChildTextStyle"
+                        android:inputType="number"
+                        android:text="  推送好友数：" />
+
+                    <TextView
+                        android:id="@+id/wxPublic_friend_num"
+                        style="@style/myChildTextStyle"
+                        android:text="" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--微信漂流瓶-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_default_weChat_piaoliuping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mydatacenter">
+
+                    <TextView
+                        style="@style/myTextStyle"
+                        android:text="微信漂流瓶" />
+
+                    <ImageView style="@style/myRightImageStyle" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+
+                <LinearLayout
+                    android:id="@+id/layout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        style="@style/myChildTextStyle"
+                        android:inputType="number"
+                        android:text="  扔瓶子个数：" />
+
+                    <TextView
+                        android:id="@+id/wxDriftBottle_num"
+                        style="@style/myChildTextStyle"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout5_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        style="@style/myChildTextStyle"
+                        android:inputType="number"
+                        android:text="  漂流瓶内容：" />
+
+                    <TextView
+                        android:id="@+id/wxDriftBottle_Content"
+                        style="@style/myChildTextStyle"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--微信朋友圈-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_default_weChat_pengyouquan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mydatacenter">
+
+                    <TextView
+                        style="@style/myTextStyle"
+                        android:text="微信朋友圈" />
+
+
+                    <ImageView style="@style/myRightImageStyle" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+
+                <LinearLayout
+                    android:id="@+id/layout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        style="@style/myChildTextStyle"
+                        android:inputType="number"
+                        android:text="  评论条数：" />
+
+                    <TextView
+                        android:id="@+id/wxCircle_num"
+                        style="@style/myChildTextStyle"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout6_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        style="@style/myChildTextStyle"
+                        android:inputType="number"
+                        android:text="  评论内容：" />
+
+                    <TextView
+                        android:id="@+id/wxCircle_content"
+                        style="@style/myChildTextStyle"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--微信一键发消息-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_default_weChat_yjfaxiaoxi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mydatacenter">
+
+                    <TextView
+                        style="@style/myTextStyle"
+                        android:text="微信一键发消息" />
+
+
+                    <ImageView style="@style/myRightImageStyle" />
+                </RelativeLayout>
+
+                <View style="@style/PersonalLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp">
+
+                    <TextView
+                        style="@style/myChildTextStyle"
+                        android:inputType="number"
+                        android:text="  打招呼内容：" />
+
+                    <TextView
+                        android:id="@+id/wxAKey_content"
+                        style="@style/myChildTextStyle"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="52dp"
+    android:background="@color/font_blue">
+
+    <ImageView
+        android:id="@+id/code_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/back_btn" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="我的二维码"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/code_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="8dp"
+        android:text="刷新"
+        android:textColor="@drawable/refresh_btn"
+        android:textSize="16sp" />
+</RelativeLayout>

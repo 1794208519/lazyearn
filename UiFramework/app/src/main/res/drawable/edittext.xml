@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/>
+    //用白色来填充里面
+    <stroke
+        android:width="0.5dp"
+        android:color="#989896" />
+    <corners android:radius="8dp" />
+    //边框的圆角的弧度
+</shape>

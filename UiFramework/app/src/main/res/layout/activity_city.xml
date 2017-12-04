@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EFF4">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/font_blue">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/city_tip"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/font_blue">
+
+        <ImageView
+            android:id="@+id/city_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/city_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="选择城市"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/opera_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_tip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="运营商:"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/opera_llist"
+        style="@style/wrap_layout"
+        android:layout_below="@+id/opera_title">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            style="@style/top_layout">
+
+            <ImageView
+                android:id="@+id/mobile_item_img"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/mobile" />
+
+            <TextView
+                android:id="@+id/mobile_item_text"
+                style="@style/usertext"
+                android:layout_marginLeft="13dp"
+                android:text="中国移动"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/mobile_item_select"
+                style="@style/img_opera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            style="@style/mid_layout"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/unicom_item_img"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/unicom" />
+
+            <TextView
+                android:id="@+id/unicom_item_text"
+                style="@style/usertext"
+                android:layout_marginLeft="13dp"
+                android:text="中国联通"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/unicom_item_select"
+                style="@style/img_opera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            style="@style/bottom_layout"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/chinanet_item_img"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/chinanet" />
+
+            <TextView
+                android:id="@+id/chinanet_item_text"
+                style="@style/usertext"
+                android:layout_marginLeft="13dp"
+                android:text="中国电信"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/chinanet_item_select"
+                style="@style/img_opera" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/city_title11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/opera_llist"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="城市:"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/city_select"
+        style="@style/top_layout"
+        android:layout_below="@+id/city_title11"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/city_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:hint="(选择你想要的城市)"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/city_item_select"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/city_select" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/city_preserve"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/begin_button1"
+        android:text="添加保存"
+        android:textColor="@drawable/but_text"
+        android:textSize="17sp" />
+
+</RelativeLayout>

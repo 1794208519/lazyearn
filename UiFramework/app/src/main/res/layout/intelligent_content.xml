@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/linear_main"
+    android:paddingLeft="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/keyword"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/intelligent_itemkey"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="关键词"
+            android:textColor="#FF4D4C4C"
+            android:textSize="17sp" />
+        <ImageView
+            android:src="@mipmap/setting_arrow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+         />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="32dp"
+        android:background="#FFB4B4B4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/intelligent_itemcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="33dp"
+            android:textColor="#FF4D4C4C"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.TextureMapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+
+        <ImageView
+            android:id="@+id/bmapMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@mipmap/gcoding" />
+
+        <RelativeLayout
+            android:id="@+id/detailMsg"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_below="@+id/bmapMark"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="-14dp"
+            android:background="@drawable/vq"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detailMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="微粉已将您的手机当前位置模拟到"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/detailMessage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:id="@+id/baidumap_centerToMyLocation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/point_button1" />
+
+        <ListView
+            android:id="@+id/baidumap_searchResultListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/code"
+            android:scrollbarSize="1px"
+            android:scrollbarThumbHorizontal="@drawable/thumb01"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="7dp"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <com.widget.EditTextWithDel
+                android:id="@+id/baidumap_keyOrResult"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="5"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@mipmap/places_ic_search"
+                android:drawablePadding="3dp"
+                android:drawableRight="@drawable/ic_move_del"
+                android:hint="请输入搜索关键字"
+                android:paddingLeft="2dp"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:textColor="#4F4F4F"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/baidumap_searchButton"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/autoreplybtn"
+                android:text="搜索"
+                android:textColor="#4F4F4F"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/baidumap_addAddress"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/autoreplybtn"
+                android:text="添加"
+                android:textColor="#4F4F4F"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

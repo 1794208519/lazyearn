@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D3031"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/font_blue">
+
+    </RelativeLayout>
+
+    <include layout="@layout/common_top_bar_layout3" />
+
+    <LinearLayout
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/code_bg"
+        android:orientation="vertical"
+        android:paddingBottom="28dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="28dp">
+
+        <TextView
+            android:id="@+id/img_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="此二维码仅做一次性使用\n用完请点击刷新"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_code"
+            android:layout_width="330dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/img_tip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_code"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"
+            android:text="扫描上面的二维码，登录微信"
+            android:id="@+id/txt_report"
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

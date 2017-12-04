@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ui.activity.MapupdateActivity"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/font_blue">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/helloTiptitle"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/font_blue">
+
+        <ImageView
+            android:id="@+id/device_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_btn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="地图"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/map_container">
+
+    </FrameLayout>
+</LinearLayout>

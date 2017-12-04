@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ui.activity.SetTimerActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_set_timer"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/font_blue"
+        android:gravity="bottom"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_toubu_set_timer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_title_set_timer"
+        android:background="@color/font_blue">
+
+        <ImageView
+            android:id="@+id/iv_fanhui_set_timer"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/tv_set_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="设置定时"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <TimePicker
+        android:id="@+id/tp_set_timer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_toubu_set_timer"
+        android:headerBackground="@color/font_blue"
+        android:background="#fff"
+        android:numbersSelectorColor="@color/font_blue">
+    </TimePicker>
+
+    <RelativeLayout
+        android:id="@+id/rl_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_toubu_set_timer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:background="@color/font_blue">
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_interval"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="间隔:"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_interval"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/tv_interval"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:maxLength="2"
+                android:gravity="center"
+                android:text="24"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/tv_interval_hour"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/et_interval"
+                android:gravity="center"
+                android:text="小时"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/bt_interval"
+        android:background="#fff"
+        android:text="确定"
+        android:textColor="@color/font_blue"
+        android:textSize="30sp"
+        android:layout_below="@+id/rl_interval"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+
+</RelativeLayout>

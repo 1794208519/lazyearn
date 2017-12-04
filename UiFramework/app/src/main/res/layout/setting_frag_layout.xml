@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical">
+
+    <com.widget.CustomerScrollView
+        android:id="@+id/customerScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.widget.CustomerListView
+                android:id="@+id/set_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:dividerHeight="0.6px">
+
+            </com.widget.CustomerListView>
+
+            <com.widget.CustomerListView
+                android:id="@+id/set_list1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:dividerHeight="0.6px">
+
+            </com.widget.CustomerListView>
+        </LinearLayout>
+
+    </com.widget.CustomerScrollView>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="lv_click_color">#77AAAAAA</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="tab_text_unselected">#828990</color>
+
+    <color name="app_main_color">#3F51B5</color>
+    <color name="app_main_color_deep">#303F9F</color>
+
+    <color name="bg_activity">#F0EFF4</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#f4f4f4</color>
+
+    <color name="progress_end">#87CEEB</color>
+    <color name="progress_start">#87CEEB</color>
+
+    <color name="green">#15de33</color>
+    <color name="orange">#f4c600</color>
+    <color name="yellow_light">#f2eec2</color>
+    <color name="red">#f45a5a</color>
+    <color name="gray_black">#777575</color>
+
+    <color name="pink">#e65050</color>
+    <color name="transparent">#00ffffff</color>
+    <!--聊天文字的颜色-->
+    <color name="font_black_gray">#000</color>
+    <color name="font_blue">#1D84EF</color>
+    <color name="deep_orange">#FF4538</color>
+    <color name="pressed_orange">#FFFA3628</color>
+    <color name="deep_gray">#bfbfbf</color>
+    <color name="purple">#e16bc7</color>
+    <color name="bg_gray">#8e8e8e</color>
+    <!--显示的文字颜色-->
+    <color name="text_gray">#FF636363</color>
+    <color name="item_decoration">#FFA6A6A6</color>
+    <!--显示的item点击颜色-->
+    <color name="text_Grey">#FFC4C7C9</color>
+
+    <color name="half_transparent_black">#7a000000</color>
+    <color name="titleWhite">#F5F5F5</color>
+
+    <color name="line">#ffd3dde6</color>
+
+    <!-- 描边颜色 -->
+    <color name="border_clo">#DEDEDE</color>
+    <color name="border">#E2E2E2</color>
+    <color name="border_color">#D9D9D9</color>
+    <color name="text_clo">#333</color>
+    <color name="blue">#ADD8E6</color>
+
+    <!-- dialog背景 -->
+    <color name="text_blue">#0076FF</color>
+    <color name="text_black">#333333</color>
+    <color name="text_select_pressed">#1000</color>
+    <color name="text_select_white">#ffffff</color>
+
+    <!--pop背景-->
+    <color name="pop_bg">#E9E9E9</color>
+
+    <!-- Alert背景色-->
+    <color name="alert_bg">#F89042</color>
+
+    <!--button-->
+    <color name="begin_buttnon1">#FFF58604</color>
+    <color name="begin_buttnon1_1">#FFD67404</color>
+
+    <color name="gray_content_in">#FFF1EFEF</color>
+    <color name="gray_content_in2">#FFFCFCFC</color>
+    <color name="white_near">#FFFFFEFE</color>
+    <color name="bg_yellow">#F58505</color>
+    <color name="tab_backgroud">#FF4538</color>
+    <drawable name="tab_horizontal_item_p">#FF4538</drawable>
+    <drawable name="tab_horizontal_item_d">#fefffe</drawable>
+    <drawable name="tab_yellow_item_p">#0076FF</drawable>
+
+    <color name="transparent_red">#ddcfcece</color>
+    <color name="text_font_set">#c7c7c7</color>
+    <color name="gray">#696969</color>
+</resources>

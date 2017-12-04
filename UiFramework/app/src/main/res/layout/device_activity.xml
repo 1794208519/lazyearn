@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EFF4"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/font_blue">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/helloTiptitle"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/font_blue">
+
+        <ImageView
+            android:id="@+id/device_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_btn" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="设备中心"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/helloTiptitle"
+        android:layout_marginTop="20dp"
+        android:overScrollMode="never">
+
+
+        <LinearLayout
+            android:id="@+id/ll_username"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_devices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="设备1"
+                android:textColor="@color/font_blue"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/autoreplybtn"
+                android:text="账号管理"
+                android:textColor="@drawable/but_text"
+                android:textSize="18sp" />
+
+            <com.widget.DeviceListView
+                android:id="@+id/usernameList"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/address"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/autoreplybtn"
+                android:text="地点管理"
+                android:textColor="@drawable/but_text"
+                android:textSize="18sp" />
+
+            <com.widget.DeviceListView
+                android:id="@+id/addressList"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/preserve"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/back_preserve"
+        android:text="保存"
+        android:textColor="@drawable/but_preserve"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

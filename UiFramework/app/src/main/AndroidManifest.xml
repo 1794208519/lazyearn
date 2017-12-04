@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uidemo">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+
+
+    　　
+
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    　　
+
+
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读取手机通讯录 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 写入手机通讯录 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.MyApp.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.ui.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppSplash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ui.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            />
+        <activity
+            android:name="com.ui.activity.OtherActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            />
+        <activity
+            android:name="com.ui.activity.AccountActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.DeviceActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.CodeActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.AccManagerActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.AdrManagerActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.IntelligentActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.CityActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.DefaultDataActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.QQDefaultDataActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true" />
+        <!-- Ml1Y28gvPMIDq3TXPbFZ5uvznHO71lHb樊 -->
+        <!-- wR9gdHGakzLmcDzTpXl7o7Vq1u7iZkGA 孙 -->
+        <!-- 百度地图 T88EUGFjXTmzEasDxGF2Ah1gOXzGHtma 朱 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Ml1Y28gvPMIDq3TXPbFZ5uvznHO71lHb" />
+
+        <!-- android:value="3GpOWE9sDGucoxRFKh4v9UojdIGexA2N" -->
+        <!-- /> -->
+
+        <service android:name="com.service.MusiceService" />
+
+        <activity
+            android:name="com.ui.activity.DeviceUpdateActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name="com.ui.activity.MapupdateActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.DeleteDeadFriendsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.ShowDeadFriendDataActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.WeiXinHaoActivity"
+            android:label="@string/title_activity_wei_xin_liao_tain"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.WeiXinHaoYouActivity"
+            android:label="@string/title_activity_wei_xin_hao_you"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name="com.ui.activity.LiaoTianJiLuActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name="com.ui.activity.SetTimerActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name="com.ui.activity.MessageReplyActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name="com.ui.activity.AboutVersionActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name="com.ui.activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"></activity>
+    </application>
+
+</manifest>

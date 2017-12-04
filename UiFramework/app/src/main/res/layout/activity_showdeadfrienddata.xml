@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/font_blue">
+
+    </RelativeLayout>
+
+    <include layout="@layout/common_top_bar_layout4" />
+    <WebView
+        android:id="@+id/web_show_deadfriendata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+</LinearLayout>

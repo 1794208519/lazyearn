@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerInParent="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_cir_bg"
+        android:orientation="vertical">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi_load"
+            style="@style/AVLoadingIndicatorView.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_gravity="center"
+            app:indicatorName="BallClipRotatePulseIndicator" />
+
+        <TextView
+            android:id="@+id/tvLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:text="正在连接服务器..."
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

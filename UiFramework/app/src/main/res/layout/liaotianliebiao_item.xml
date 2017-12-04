@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_name_liaotianjilu"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="懒懒"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_liaotianliebiao"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="不睡觉肯定不V刊是不V刊是不V刊是吧"
+        android:layout_below="@+id/tv_name_liaotianjilu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_liaotiantupian"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/tv_name_liaotianjilu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

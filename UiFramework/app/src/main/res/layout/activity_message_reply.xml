@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EFF4">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/font_blue">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/intelligent_tip"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/font_blue">
+
+        <ImageView
+            android:id="@+id/intelligent_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_btn"/>
+
+        <TextView
+            android:id="@+id/intelligent_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="智能回复记录编辑"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lin_key"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/intelligent_tip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/keyword"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/intelligent_itemkey"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="关键词"
+            android:textColor="#FF4D4C4C"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/message_intelligentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_key"
+        android:overScrollMode="never"
+        />
+
+    <Button
+        android:id="@+id/message_add"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/begin_button1"
+        android:text="添加回复"
+        android:textColor="@drawable/but_text"
+        android:textSize="17sp"/>
+</RelativeLayout>

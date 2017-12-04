@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/font_blue">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/helloTiptitle"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/font_blue">
+
+        <ImageView
+            android:id="@+id/device_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_btn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--<ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/chinanet" />-->
+
+            <TextView
+                android:id="@+id/tv_title_device"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="设备中心"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_but"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:background="#F4F4F4"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="2">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/buttonLeft"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/device_left"-->
+            <!--android:text="城市管理"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="@color/button_text1" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/buttonRight"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="18sp"-->
+            <!--android:background="@drawable/device_right"-->
+            <!--android:text="地址管理"-->
+            <!--android:textColor="@color/button_text" />-->
+    <!--</LinearLayout>-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        style="@style/MyCustomTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/font_blue"
+        app:tabBackground="@drawable/tabyellowbackground"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/text_select_white"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/text_select_white"
+        app:tabTextColor="#c7bdbd"
+
+      ></android.support.design.widget.TabLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#F4F4F4"
+        android:flipInterval="30"
+        android:overScrollMode="never"
+        android:persistentDrawingCache="animation" />
+</LinearLayout>

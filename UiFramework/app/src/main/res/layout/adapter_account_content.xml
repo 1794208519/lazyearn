@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="#FFF"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/list_re"
+    android:paddingLeft="12dp">
+
+    <ImageView
+        android:id="@+id/img_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/adr" />
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_ico"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="城市—"
+        android:textColor="#FF4D4C4C"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/tv_operators_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_city"
+        android:layout_centerVertical="true"
+        android:textColor="#FF4D4C4C"
+        android:textSize="18sp" />
+
+<CheckBox
+    android:id="@+id/ck_select"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:checked="false"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="10dp"/>
+</RelativeLayout>

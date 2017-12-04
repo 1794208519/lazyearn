@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ui.activity.SearchActivity">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="#1D84EF"
+        android:gravity="bottom">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_toubu_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_title"
+        android:background="#1D84EF">
+
+        <ImageView
+            android:id="@+id/iv_fanhui_search"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_btn" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:background="@drawable/bg_exit_content_in"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:drawableLeft="@mipmap/sousuo"
+            android:drawablePadding="3dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:imeOptions="actionSearch"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/iv_fanhui_search"
+            android:hint="请输入想要搜索的内容"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_history"
+        android:layout_below="@+id/rl_toubu_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tv_history"
+        android:text="清空历史记录"
+        android:layout_marginLeft="5dp"
+        android:textColor="#8a8a8a"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_below="@+id/rl_history"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

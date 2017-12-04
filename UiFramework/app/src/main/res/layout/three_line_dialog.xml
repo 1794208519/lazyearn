@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/dialog_threeLine_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="从第几个公众号开始:"
+            android:textSize="20sp"
+            />
+
+        <com.widget.PickerView
+            android:id="@+id/dialog_threeLine_wheel1"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/dialog_threeLine_tv1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/dialog_threeLine_tv2"
+            android:layout_below="@+id/dialog_threeLine_wheel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="推送公众号个数:"
+            android:textSize="20sp"
+            />
+
+        <com.widget.PickerView
+            android:id="@+id/dialog_threeLine_wheel2"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/dialog_threeLine_tv2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/dialog_threeLine_tv3"
+            android:layout_below="@+id/dialog_threeLine_wheel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="推送好友数:"
+            android:textSize="20sp"
+            />
+
+        <com.widget.PickerView
+            android:id="@+id/dialog_threeLine_wheel3"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/dialog_threeLine_tv3"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            />
+        <RelativeLayout
+            android:layout_below="@+id/dialog_threeLine_wheel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/dialog_ThreeLine_no"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="取消"
+                />
+
+            <Button
+                android:id="@+id/dialog_ThreeLine_yes"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/dialog_ThreeLine_no"
+                android:text="确定"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

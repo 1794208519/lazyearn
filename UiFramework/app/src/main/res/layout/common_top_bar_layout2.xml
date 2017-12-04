@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="52dp"
+    android:background="@color/font_blue">
+
+    <ImageView
+        android:id="@+id/account_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/back_btn" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="添加账号"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</RelativeLayout>

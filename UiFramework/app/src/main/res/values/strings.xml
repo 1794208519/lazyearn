@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">懒 懒</string>
+    <string name="app_name1">懒懒APP</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_wei_xin_liao_tain">WeiXinLiaoTain</string>
+    <string name="title_activity_wei_xin_hao_you">WeiXinHaoYou</string>
+
+    <string name="version_log1">1.0版本</string>
+    <string name="version_log1_1">10/31/2017</string>
+    <string name="version_log1_2">·现推出懒懒控制手机插卡版,已上线微信与QQ模块\n·更改所有界面主题风格\n·添加查看智能回复聊天记录功能\n·添加白名单自动导入表，导入通讯录等功能\n·添加自动换号功能\n·添加清除死粉功能\n·添加微信一键养号功能\n·添加开启定时运行所有服务功能\n</string>
+    <string name="version_log2">1.1版本</string>
+    <string name="version_log2_1">11/6/2017</string>
+    <string name="version_log2_2">·对智能回复添加模糊查询，上拉加载下拉刷新功能，聊天记录添加按关键词和时间查询下拉加载更多功能。</string>
+    <string name="version_log3">1.2版本</string>
+    <string name="version_log3_1">11/20/2017</string>
+    <string name="version_log3_2">·修复城市管理的bug。</string>
+</resources>

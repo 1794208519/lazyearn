@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <com.ui.view.MyVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/go_btn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button_splash"
+        android:text="立即开始"
+        android:textColor="@color/button_splash"
+        android:textSize="25dp" />
+</RelativeLayout>

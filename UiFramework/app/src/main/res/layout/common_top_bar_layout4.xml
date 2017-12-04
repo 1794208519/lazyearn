@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="52dp"
+    android:background="@color/font_blue">
+
+    <ImageView
+        android:id="@+id/deadfriend_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/back_btn" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="死粉数据显示"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

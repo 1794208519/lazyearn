@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.ui.activity.LiaoTianJiLuActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="#1D84EF"
+        android:gravity="bottom"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_toubu_liaotianjilu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_title"
+        android:background="#1D84EF">
+        <ImageView
+            android:id="@+id/iv_fanhui_liaotianjilu"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/tv_liaotianjilu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/iv_fanhui_liaotianjilu"
+            android:text="聊天记录"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="1970-01-01"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_liaotianjilu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_toubu_liaotianjilu" />
+    <TextView
+        android:id="@+id/et_search"
+        android:background="@drawable/bg_exit_content_in"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_toubu_liaotianjilu"
+        android:drawableLeft="@mipmap/sousuo"
+        android:drawablePadding="3dp"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_fanhui_search"
+        android:layout_toLeftOf="@+id/bt_qingkong_liaotianjilu"
+        android:hint="请输入想要搜索的内容"
+        android:textColor="#8a8a8a"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/bt_quanbu_liaotianjilu"
+        android:text="显示全部"
+        android:background="@drawable/bg_bt_search"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_toubu_liaotianjilu"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="70dp"
+        android:layout_height="36dp" />
+    <Button
+        android:id="@+id/bt_qingkong_liaotianjilu"
+        android:text="清空记录"
+        android:background="@drawable/bg_bt_search"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_toubu_liaotianjilu"
+        android:layout_toLeftOf="@+id/bt_quanbu_liaotianjilu"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="70dp"
+        android:layout_height="36dp" />
+
+    <RelativeLayout
+        android:id="@+id/devices_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/devices_load_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loading_animator"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/devices_load_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:text="正在获取数据..."
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/devices_noneww"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/devices_noneww_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/address_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/devices_noneww_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="暂无数据，点击屏幕刷新"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

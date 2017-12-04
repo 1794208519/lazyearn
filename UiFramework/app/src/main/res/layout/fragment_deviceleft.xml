@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ui.fragment.DeviceleftFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/main_list"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addManager_btn"
+        android:visibility="invisible">
+        <LinearLayout
+            android:id="@+id/lin_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:weightSum="4"
+            android:gravity="center_vertical"
+            >
+            <Button
+                android:id="@+id/ck_total"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/device_mid"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/button_text1"
+                android:text="全选"/>
+            <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/device_mid"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="删除"
+            android:textColor="@color/button_text1"
+            />
+            <Button
+                android:id="@+id/btn_cancelsave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/device_mid"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="取消应用"
+                android:textColor="@color/button_text1"
+                />
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/device_mid"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="应用"
+                android:textColor="@color/button_text1"
+                />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_addressList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lin_s"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="24dp"
+            android:overScrollMode="never"
+             />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/add_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addManager_btn"
+
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/loading_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loading_animator"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loading_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:text="正在获取数据......"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addManager_btn"
+
+        android:layout_marginBottom="20dp"
+        android:onClick="reLoadAddress"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/address_error_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/address_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_error_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="获取失败，请点击屏幕重试"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_noneww"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addManager_btn"
+
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/address_noneww_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/address_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_noneww_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="暂无数据"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/addManager_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/account_button"
+        android:text="添加城市"
+        android:textColor="@color/text_blue"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

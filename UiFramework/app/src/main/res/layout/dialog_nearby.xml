@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/dialog_nearby_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="选择打招呼人数:"
+            android:textSize="20sp"
+            />
+
+        <!--<ru.evgeniy.rikov.wheelview.WheelView-->
+        <!--android:id="@+id/dialog_nearby_wheel"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_below="@+id/dialog_nearby_tv"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--/>-->
+        <!--<com.itheima.wheelpicker.WheelPicker-->
+            <!--android:id="@+id/dialog_nearby_wheel"-->
+            <!--android:layout_below="@+id/dialog_nearby_tv"-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#FFF1EFEF"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--app:wheel_atmospheric="true"-->
+            <!--app:wheel_curved="true"-->
+            <!--app:wheel_item_text_color="#66ff0000"-->
+            <!--app:wheel_selected_item_position="5"-->
+            <!--app:wheel_selected_item_text_color="#6600ffff"-->
+            <!--app:wheel_item_space="5dp"-->
+            <!--app:wheel_visible_item_count="4"-->
+            <!--tools:layout_editor_absoluteX="0dp"-->
+            <!--tools:layout_editor_absoluteY="0dp">-->
+
+            <!--属性解释:
+
+                wheel_atmospheric :  条目颜色是否执行衔接处理 效果更好
+                wheel_curved ： 是否是弧形状态显示
+                wheel_cyclic : 是否可循环
+                wheel_selected_item_position ： 默认选中第几个条目
+                wheel_item_text_color 未选中的条目颜色
+                wheel_selected_item_text_color  选中的条目颜色-->
+        <!--</com.itheima.wheelpicker.WheelPicker>-->
+        <com.widget.PickerView
+            android:id="@+id/dialog_nearby_wheel"
+            android:layout_below="@+id/dialog_nearby_tv"
+            android:layout_centerInParent="true"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/dialog_nearby_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_nearby_wheel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="打招呼内容:"
+            android:textSize="20sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/dialog_nearby_tv1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_dialog_content_in">
+
+            <EditText
+                android:id="@+id/dialog_nearby_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@null"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/dialog_nearby_no"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="取消"
+                />
+
+            <Button
+                android:id="@+id/dialog_nearby_yes"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/dialog_nearby_no"
+                android:text="确定"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

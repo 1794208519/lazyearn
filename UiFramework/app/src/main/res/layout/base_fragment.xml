@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="#1D84EF">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/helloTiptitle"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#1D84EF">
+
+        <com.widget.RoundAngleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/head"
+            app:roundHeight="17.5dp"
+            app:roundWidth="17.5dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="微炫客"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_but"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/buttonLeft"
+                android:layout_width="62dp"
+                android:layout_height="32dp"
+                android:background="@drawable/button_left"
+                android:text="主页"
+                android:textColor="@color/button_text" />
+
+            <Button
+                android:id="@+id/buttonRight"
+                android:layout_width="62dp"
+                android:layout_height="32dp"
+                android:background="@drawable/button_right"
+                android:text="设备"
+                android:textColor="@color/button_text" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/realcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#E5E5E5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#f8f8f8">
+
+        <RelativeLayout
+            android:id="@+id/content_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/content_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/mainbtn" />
+
+                <TextView
+                    android:id="@+id/content_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:text="首页"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addre_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/address_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/addressbtn" />
+                <TextView
+                    android:id="@+id/address_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:text="地图"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/setting_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/settingbtn" />
+                <TextView
+                    android:id="@+id/setting_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="设置"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

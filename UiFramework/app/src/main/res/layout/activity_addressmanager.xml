@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEDEDED">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="@color/font_blue">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/addManager_tip"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/font_blue">
+
+        <ImageView
+            android:id="@+id/addManager_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/addManager_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="地点中心"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_addressList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addManager_btn"
+        android:layout_below="@+id/addManager_tip"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="24dp"
+        android:overScrollMode="never"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/add_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addManager_btn"
+        android:layout_below="@+id/addManager_tip"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/loading_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loading_animator"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loading_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:text="正在获取数据......"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addManager_btn"
+        android:layout_below="@+id/addManager_tip"
+        android:layout_marginBottom="20dp"
+        android:onClick="reLoadAddress"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/address_error_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/address_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_error_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="获取失败，请点击屏幕重试"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_noneww"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addManager_btn"
+        android:layout_below="@+id/addManager_tip"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/address_noneww_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/address_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_noneww_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="暂无数据"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/addManager_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/begin_button"
+        android:text="添加地点"
+        android:textColor="@drawable/but_text"
+        android:textSize="17sp" />
+
+</RelativeLayout>

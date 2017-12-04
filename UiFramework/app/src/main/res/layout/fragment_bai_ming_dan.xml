@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.ui.fragment.DevicerightFragment">
+    <RelativeLayout
+        android:id="@+id/main_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_addressList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#88666666"
+        android:clickable="true"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/loading_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loading_animator"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loading_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:text="正在获取数据......"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_error_bai_ming_dan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addManager_tip"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/address_error_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/address_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_error_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="获取失败，请点击屏幕重试"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_noneww"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addManager_tip"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/address_noneww_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/address_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_noneww_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="暂无数据"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

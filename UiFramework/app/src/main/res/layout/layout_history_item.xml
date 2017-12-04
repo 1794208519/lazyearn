@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <ImageView
+        android:id="@+id/iv_history"
+        android:src="@mipmap/history"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp" />
+    <TextView
+        android:id="@+id/tv_history"
+        android:text="放松放松"
+        android:textColor="#8a8a8a"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_history"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

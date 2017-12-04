@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ui.activity.WeiXinHaoActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="#1D84EF"
+        android:gravity="bottom"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_toubu_weixinhao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_title"
+        android:background="#1D84EF">
+
+        <ImageView
+            android:id="@+id/iv_fanhui_weixinhao"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/tv_weixinhao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="我的微信号"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_weixinhao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_toubu_weixinhao">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/devices_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/devices_load_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loading_animator"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/devices_load_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:text="正在获取数据..."
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/devices_noneww"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/devices_noneww_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/address_none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/devices_noneww_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="暂无数据，点击屏幕刷新"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

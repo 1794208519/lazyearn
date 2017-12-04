@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">赚赚</string>
+
+    <string name="app_icon_name">赚赚</string>
+
+    <string name="phoneVicmob">客服电话：\n0510-68561611</string>
+
+    <string name="aboutVicmob">\u3000\u3000无锡微炫客信息技术有限公司是基于微信公众号为广大企业提供开发、运营、培训、
+        推广等一体化解决方案服务的企业服务拓展商。 凭借着丰富的产品功能、全新的产品设计、快速的产品创新、超出用户期待的产品价值，
+        帮助企业实现线上线下互通（O2O)，社会化客户关系管理， 移动商城(Vshop),轻应用（lightapp），全民营销(VSP)等多个层面的业务开发。
+    </string>
+    <string name="test_accessibility">为了程序正常运行请打开此服务</string>
+    <string name="public_number_remark">备注：公众号推广辅助不能与其他服务同时工作。
+        公众号推广是自动向联系人推送公众号名片,请先关注需要推送的公众号,然后方可使用本功能。
+        推送人数不能大于微信好友数。
+    </string>
+    <string name="drift_bottle">备注：漂流瓶内容至少5个字，漂流瓶个数最多20</string>
+    <string name="replynearby">备注：回复内容不要超过50个字</string>
+    <string name="group_friend">备注：群好友自动添加需要将群聊加入通讯录同时不能与其他
+        服务同时工作。将群聊加入通讯录步骤：点击群聊右上角头像，
+        将群聊保存到通讯录开关打开。注意不要超过群总数。
+    </string>
+    <!--版本-->
+    <string name="version_log6">1.5版本</string>
+    <string name="version_log6_1">11/23/2017</string>
+    <string name="version_log6_2">·匹配微信新版本6.5.22</string>
+    <string name="version_log5">1.4版本</string>
+    <string name="version_log5_1">11/18/2017</string>
+    <string name="version_log5_2">·匹配微信新版本6.5.19，修复详细资料个人签名出现的问题</string>
+    <string name="version_log4">1.3版本</string>
+    <string name="version_log4_1">11/7/2017</string>
+    <string name="version_log4_2">·修复一键开始中途卡顿bug,对附近的人的消息回复进行发送失败也清空处理</string>
+    <string name="version_log3">1.2版本</string>
+    <string name="version_log3_1">10/29/2017</string>
+    <string name="version_log3_2">·添加懒懒控制分配白名单,一键开始,自动换号,一键清粉,一键养号功能；修复已知bug</string>
+    <string name="version_log2">1.1版本</string>
+    <string name="version_log2_1">10/8/2017</string>
+    <string name="version_log2_2">·匹配微信6.5.16版本，修改已知Bug</string>
+    <string name="version_log1">1.0版本</string>
+    <string name="version_log1_1">9/22/2017</string>
+    <string name="version_log1_2">·现推出懒赚手机插卡版,已上线微信与QQ模块。</string>
+    <string name="title_activity_qqmain">QQMainActivity</string>
+
+    <!--QQ注意事项-->
+    <!--QQ功能-->
+    <string name="qq_function">QQ功能</string>
+    <string name="qq_address_manage">地点管理</string>
+    <string name="qq_reset">QQ重置</string>
+    <string name="qq_phone_list">通讯录</string>
+    <string name="qq_add_friend">一键加好友</string>
+    <string name="qq_add_group_friends">一键加群友</string>
+    <string name="qq_send_message">一键发消息</string>
+    <string name="qq_nearby">附近人</string>
+    <!--QQ注意内容-->
+    <string name="qq_attention_content">QQ注意内容</string>
+    <string name="qq_address_manage_content">地点管理</string>
+    <string name="qq_reset_content">QQ重置</string>
+    <string name="qq_phone_list_content">通讯录</string>
+    <string name="qq_add_friend_content">\t\t两者之间有个互相的制约的，当一个添加过多的好友时，另一个操作一会就会出现操作频繁的提示，一般这时候都需要等待一会，再进行操作</string>
+    <string name="qq_add_group_friends_content">\t\t两者之间有个互相的制约的，当一个添加过多的好友时，另一个操作一会就会出现操作频繁的提示，一般这时候都需要等待一会，再进行操作\n起始群不能超过十个</string>
+    <string name="qq_send_message_content">无限制</string>
+    <string name="qq_nearby_content">\t\t打招呼关注的个数是按照QQ附近人等级来区分的，等级越高，打招呼次数关注人数就越多。
+        模拟定位添加的地点一次最好只添加一个地点，多余一个的话会导致第二个以后的地点不能模拟成功</string>
+    <!--微信注意事项-->
+    <!--微信功能-->
+    <string name="wechat_function">微信功能</string>
+    <string name="wechat_address_manage">地点管理</string>
+    <string name="wechat_nearby">附近人</string>
+    <string name="wechat_reset">微信重置</string>
+    <string name="wechat_auto_reply">自动回复</string>
+    <string name="wechat_phone_list">通讯录</string>
+    <string name="wechat_add_friend">一键加好友</string>
+    <string name="wechat_add_group_friend">一键加群友</string>
+    <string name="wechat_public_num">公众号</string>
+    <string name="wechat_drift_bottle">漂流瓶</string>
+    <string name="wechat_circle_friends">朋友圈</string>
+    <string name="wechat_send_message">一键发消息</string>
+    <string name="wechat_whitelist">白名单</string>
+    <!--微信注意内容-->
+    <string name="wechat_attention_content">微信注意内容</string>
+    <string name="wechat_address_manage_content">地点管理</string>
+    <string name="wechat_nearby_content">\t\t打招呼过多时，对方收不到消息，因此设置打招呼的上限为80人。</string>
+    <string name="wechat_reset_content">微信重置</string>
+    <string name="wechat_auto_reply_content">根据添加的关键词和回复内容回复好友的消息，前提是微信允许显示通知栏开启。</string>
+    <string name="wechat_phone_list_content">通讯录</string>
+    <string name="wechat_add_friend_content">\t\t由于微信更新通讯录较慢，因此使用一键生成手机号后过一会儿再添加通讯录好友。
+        请勿频繁生成手机号和更新通讯录，过于更新通讯录会被腾讯检测并被限制。</string>
+    <string name="wechat_add_group_friend_content">\t\t请将需要添加好友的群聊保存到通讯录。</string>
+    <string name="wechat_public_num_content">\t\t必须关注要推送的公众号</string>
+    <string name="wechat_drift_bottle_content">\t\t每天累计扔瓶子不能超过20个。</string>
+    <string name="wechat_circle_friends_content">没有限制</string>
+    <string name="wechat_send_message_content">\t\t一次性最好不要超过30人次，多了的话，微信会检测到会冻结帐号</string>
+    <string name="wechat_whitelist_content">\t\t将需要添加的好友的号码汇总到Excel表格中（号码放入第二列）。</string>
+</resources>

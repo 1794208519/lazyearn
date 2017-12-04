@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/dialog_nearby_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_nearby_wheel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="打招呼内容:"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/dialog_nearby_tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_dialog_content_in">
+
+            <EditText
+                android:id="@+id/dialog_nearby_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@null" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/dialog_nearby_no"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/dialog_nearby_yes"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/dialog_nearby_no"
+                android:text="确定" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
