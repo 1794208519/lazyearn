@@ -21,6 +21,15 @@
         将群聊保存到通讯录开关打开。注意不要超过群总数。
     </string>
     <!--版本-->
+    <string name="version_log9">1.8版本</string>
+    <string name="version_log9_1">1/4/2017</string>
+    <string name="version_log9_2">·匹配微信新版本6.6.1</string>
+    <string name="version_log8">1.7版本</string>
+    <string name="version_log8_1">12/27/2017</string>
+    <string name="version_log8_2">·匹配微信新版本6.6</string>
+    <string name="version_log7">1.6版本</string>
+    <string name="version_log7_1">12/13/2017</string>
+    <string name="version_log7_2">·匹配微信新版本6.5.23</string>
     <string name="version_log6">1.5版本</string>
     <string name="version_log6_1">11/23/2017</string>
     <string name="version_log6_2">·匹配微信新版本6.5.22</string>

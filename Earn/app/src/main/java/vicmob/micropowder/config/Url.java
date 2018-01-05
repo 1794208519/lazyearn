@@ -32,7 +32,7 @@ public class Url {
     /**
      * 获取添加的总的地点
      */
-    public final static String SELECT_ADD = HOST + "VicmobLazyEarn/lazyearn-api/autoData/selectDevicesAddress";
+    public final static String   SELECT_ADD = HOST + "VicmobLazyEarn/lazyearn-api/autoData/selectDevicesAddress";
 
     /**
      * 删除添加的总的地点

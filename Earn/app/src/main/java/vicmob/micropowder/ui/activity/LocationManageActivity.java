@@ -128,12 +128,13 @@ public class LocationManageActivity extends BaseActivity {
                     mapSearchDao.delete(mMapSearchBeanList.get(position));
                     myHandler.sendEmptyMessage(DELETE);
                 }
-                if(app.mNetworkAddressList.size() > 0){
-                    app.mNetworkAddressList.remove(app.mNetworkAddressList.get(position));
-                }
+
                 //删除网络
                 if (mMapSearchBeanList.get(position).getIsLocal() == 1) {
                     deleteData(mMapSearchBeanList.get(position).getDataId());
+                    if(app.mNetworkAddressList.size() > 0){
+                        app.mNetworkAddressList.remove(app.mNetworkAddressList.get(position));
+                    }
                 }
 
                 //关闭滑动

@@ -302,7 +302,7 @@ public class EarnAccessibilityService extends BaseAccessibilityService {
                             sleepTime(1000);
                             findTextAndClick("附近的人", 0);  //点击附近的人
                             sleepTime(1000);
-                            if (isFindId(IDConstant.WX_NO_NEXT)) {
+                            if (isFindId(IDConstant.WX_NO_NEXT)) {//**************************未修改********************
                                 // 下次不提示
                                 findIdAndClick(IDConstant.WX_NO_NEXT, 0);
                                 sleepTime(1000);
@@ -536,7 +536,7 @@ public class EarnAccessibilityService extends BaseAccessibilityService {
                             findTextAndClick("朋友圈", 0);  //点击朋友圈
                             app.setAllowFriendCircle(false);
                         }
-                    } else if (event.getClassName().equals("com.tencent.mm.plugin.sns.ui.En_424b8e16")
+                    } else if (event.getClassName().equals("com.tencent.mm.plugin.sns.ui.SnsTimeLineUI")
                             && eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
                         for (int i = 0; i < friendTextNum; i++) {
                             sleepTime(1000);
@@ -686,12 +686,7 @@ public class EarnAccessibilityService extends BaseAccessibilityService {
                             AccessibilityNodeInfo nodeInfo = getRootInActiveWindow();
                             List<AccessibilityNodeInfo> list = nodeInfo.findAccessibilityNodeInfosByViewId("com.tencent.mm:id/" + IDConstant.NEW_FRIENDS_LIST_ICON);
                             if (list.size() < 7 && list.size() < mAddfriendsText) {
-                                findIdAndClick(IDConstant.NEW_FRIENDS_LIST_ICON, mAddFriendsNumber);
-                                sleepTime(1000);
-                                mAddFriendsNumber++;
-                                AddPeople++;
-                                mClickIndex = 0;
-                                mClickFinish = 0;
+
                                 if (list.size() == mAddFriendsNumber) {
                                     mAddFriendsNumber = 0;
                                     AddPeople = 0;
@@ -729,6 +724,12 @@ public class EarnAccessibilityService extends BaseAccessibilityService {
                                         return;
                                     }
                                 }
+                                findIdAndClick(IDConstant.NEW_FRIENDS_LIST_ICON, mAddFriendsNumber);
+                                sleepTime(1000);
+                                mAddFriendsNumber++;
+                                AddPeople++;
+                                mClickIndex = 0;
+                                mClickFinish = 0;
                             } else {
                                 if (AddPeople >= mAddfriendsText) {
                                     mAddFriendsNumber = 0;
@@ -1129,7 +1130,7 @@ public class EarnAccessibilityService extends BaseAccessibilityService {
                     /**
                      * 公众号聊天界面
                      */
-                    if (event.getClassName().equals("com.tencent.mm.ui.chatting.En_5b8fbb1e") &&
+                    if (event.getClassName().equals("com.tencent.mm.ui.chatting.ChattingUI") &&
                             eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
                         //当获取到开始公众号>点击公众号总数  或 获取开始公众号+几个公众号 <= 点击公众号总数
                         Log.i("mm", mGetPublicNumStartText + "a" + mPublicNumTotalNumber + "a" + mGetPublicText);
@@ -1224,7 +1225,7 @@ public class EarnAccessibilityService extends BaseAccessibilityService {
                         mPublicNumTotalPeople++;
                         findIdAndClick(IDConstant.WX_HELLO_SEND_BUTTON, 0);
                         sleepTime(1000);
-                        findIdAndClick(IDConstant.WX_NO_NEXT_YES, 0);
+                        findIdAndClick(IDConstant.WX_PUBLIC_NEXT_YES, 0);
                     }
                 }
 
@@ -1455,7 +1456,7 @@ public class EarnAccessibilityService extends BaseAccessibilityService {
                         if (mGroupText > list.size()) {
                             out = list.size() - 1;
                         }
-                        if (isFindId(IDConstant.GR_NULL) || isFindText("你可以通过群聊中的“保存到通讯录”选项，将其保存到这里")) {
+                        if (isFindId(IDConstant.GR_NULL) && isFindText("你可以通过群聊中的“保存到通讯录”选项，将其保存到这里")) {
                             app.setGroupFriend(false);     //将附近人模块开启状态变成false
                             if (app.getAllowOneStart()) {
 //                                app.setAKeySendMessage(true);  //开启一键发消息// 模块
@@ -1500,7 +1501,7 @@ public class EarnAccessibilityService extends BaseAccessibilityService {
                         /**
                          * 群聊界面
                          */
-                    } else if (event.getClassName().equals("com.tencent.mm.ui.chatting.En_5b8fbb1e")
+                    } else if (event.getClassName().equals("com.tencent.mm.ui.chatting.ChattingUI")
                             && eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
                         Log.i("123", pageStatus + ":" + LAUNCHER_UI);
                         if (pageStatus == LAUNCHER_UI) {  //向内执行
@@ -1900,7 +1901,7 @@ public class EarnAccessibilityService extends BaseAccessibilityService {
                     /**
                      * 聊天界面
                      */
-                    else if (event.getClassName().equals("com.tencent.mm.ui.chatting.En_5b8fbb1e")
+                    else if (event.getClassName().equals("com.tencent.mm.ui.chatting.ChattingUI")
                             && eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
                         while (!isFindId(IDConstant.WX_AKEYCHAT_EDIT)) {
                             sleepTime(500);
@@ -2016,13 +2017,10 @@ public class EarnAccessibilityService extends BaseAccessibilityService {
                     } else if (event.getClassName().equals("com.tencent.mm.ui.account.LoginPasswordUI")
                             && eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
                         sleepTime(1000);
-                        findContentAndClick(IDConstant.WX_HEAD, 0, "更多", 1);
+                        //findContentAndClick(IDConstant.WX_HEAD, 0, "更多", 1);
+                        WXfindIdTextAndClick(IDConstant.WX_MORE, "更多", 0);
                         sleepTime(2000);
                         Log.i("123", "切换");
-                        //                        if (isFindText("切换账号")){
-                        //                            Log.i("123","切换over");
-                        //                            findTextAndClick("切换账号",0);
-                        //                        }
                         if (isFindId(IDConstant.WX_XIANXIZILIAO_hl)) {
                             findIdAndClick(IDConstant.WX_XIANXIZILIAO_hl, 0);
                         }

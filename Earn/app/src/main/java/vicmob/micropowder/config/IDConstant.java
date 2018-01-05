@@ -9,288 +9,292 @@ public class IDConstant {
     /**
      * 主界面四个功能按钮
      */
-    public static final String MAIN_BUTTON = "c2z";
+    public static final String MAIN_BUTTON = "c8t";
     /**
      * 返回
      */
-    public static final String WX_BACK = "hj";
+    public static final String WX_BACK = "hp";
     /**
      * 微信头部
      */
-    public static final String WX_HEAD = "gk";
+    public static final String WX_HEAD = "go";
 
     //------------------------------------------附近人模块----------------------------------------
     /**
      * 下次不提示
      */
-    public static final String WX_NO_NEXT = "bpe";
+    public static final String WX_NO_NEXT = "bv8";
     /**
      * 确定
      */
-    public static final String WX_NO_NEXT_YES = "akt";
+    public static final String WX_NO_NEXT_YES = "al9";
     /**
      * 附近的人列表条目
      */
-    public static final String NEARBY_LIST_VIEW = "awk";
+    public static final String NEARBY_LIST_VIEW = "ay7";
     /**
      * 查看附近的人
      */
-    public static final String NEARBY_CHECK_BUTTON = "c8p";
+    public static final String NEARBY_CHECK_BUTTON = "cdh";
     /**
      * 附近打招呼的人
      */
-    public static final String WX_GREET_NEARBY = "fy";
+    public static final String WX_GREET_NEARBY = "hu";
     /**
      * 附近打招呼的人列表头像
      */
-    public static final String WX_GREET_NEARBY_LIST = "b17";
+    public static final String WX_GREET_NEARBY_LIST = "b2";
     /**
      * 附近人打招呼详细资料界面返回按钮
      */
-    public static final String WX_GREET_NEARBY_BACK = "hj";
+    public static final String WX_GREET_NEARBY_BACK = "hp";
     /**
      * 附近人打招呼朋友验证界面完成按钮
      */
-    public static final String WX_FRIENDS_VERIFY = "h1";
+    public static final String WX_FRIENDS_VERIFY = "h5";
     /**
      * 附近打招呼的人界面查看更多按钮
      */
-    public static final String WX_LOOK_MORE = "cr1";
+    public static final String WX_LOOK_MORE = "cxe";
     /**
      * 附近打招呼的人清空按钮
      */
-    public static final String WX_WX_GREET_NEARBY_CLEAR = "h0";
+    public static final String WX_WX_GREET_NEARBY_CLEAR = "h4";
     /**
      * 附近打招呼的人确认清空按钮
      */
-    public static final String WX_WX_GREET_NEARBY_CLEAR_YES = "akt";
+    public static final String WX_WX_GREET_NEARBY_CLEAR_YES = "al";
     /**
      * 附近人打招呼详细资料界面返回按钮
      */
-    public static final String WX_FRIENDS_SURE_BACK = "hj";
+    public static final String WX_FRIENDS_SURE_BACK = "hp";
     /**
      * 打招呼按钮
      */
-    public static final String WX_HELLO_BUTTON = "am5";
+    public static final String WX_HELLO_BUTTON = "an9";
     /**
      * 打招呼文本发送按钮
      */
-    public static final String WX_HELLO_SEND_BUTTON = "h1";
+    public static final String WX_HELLO_SEND_BUTTON = "h5";
     /**
      * 打招呼文本编辑框
      */
-    public static final String SAY_HELLO_EDIT_TEXT = "cqy";
+    public static final String SAY_HELLO_EDIT_TEXT = "cxb";
 
     //---------------------------------------------朋友圈模块----------------------------------
     /**
      * 点赞外部按钮
      */
-    public static final String THUMBS_UP = "d2_";
+    public static final String THUMBS_UP = "d93";
     /*****
      * 朋友圈点赞
      */
-    public static final String WX_DIANZAN = "d1a";
+    public static final String WX_DIANZAN = "d84";
     /**
      * 点击评论按钮
      */
-    public static final String COMMENT = "d1d";
+    public static final String COMMENT = "d87";
     /**
      * 粘贴评论内容文本框
      */
-    public static final String COMMENT_CONTENT = "d2i";
+    public static final String COMMENT_CONTENT = "d9b";
     /****
      * 评论发送
      */
-    public static final String COMMENT_SEND = "d2l";
+    public static final String COMMENT_SEND = "d9e";
 
     //---------------------------------------------一键加好友功能--------------------------------
     /**
      * 一键加好友点击新的朋友时
      */
-    public static final String WX_NEW_FRIENDS = "b5s";
+    public static final String WX_NEW_FRIENDS = "b7j";
     /**
      * 新的朋友列表条目
      */
-    public static final String NEW_FRIENDS_LIST_ICON = "in";
+    public static final String NEW_FRIENDS_LIST_ICON = "it";
     /****
      * 发消息
      */
-    public static final String WX_SEND_MESSAGE = "am9";
+    public static final String WX_SEND_MESSAGE = "anc";
     /****
      * 通过验证
      */
-    public static final String WX_PASS_VALIDATION = "am0";
+    public static final String WX_PASS_VALIDATION = "an4";
     /****
      * 添加到通讯录
      */
-    public static final String WX_ADD_FRIEND = "am8";
+    public static final String WX_ADD_FRIEND = "anb";
     /**
      * 群好友拒绝判定
      */
-    public static final String GR_AFFIRM = "akt";
+    public static final String GR_AFFIRM = "alo";
 
     //---------------------------------------------公众号模块-----------------------------------
     /**
      * 公众号列表条目
      */
-    public static final String PUBLIC_NUM_LIST_VIEW = "yr";
+    public static final String PUBLIC_NUM_LIST_VIEW = "z5";
     /**
      * 微信公众号聊天界面返回键
      */
-    public static final String WX_PN_GO_BACK = "h4";
+    public static final String WX_PN_GO_BACK = "h_";
     /**
      * 公众号推荐给朋友
      */
-    public static final String WX_PUBLIC_NUM_FRIEND = "ho";
+    public static final String WX_PUBLIC_NUM_FRIEND = "g2";
     /*****
      * 更多联系人id
      */
-    public static final String PUBLIC_MORE_CONTACT = "alu";
+    public static final String PUBLIC_MORE_CONTACT = "amo";
     /**
      * 选择联系人列表
      */
-    public static final String CHOOSE_PEOPLE = "jz";
+    public static final String CHOOSE_PEOPLE = "kf";
+    /**
+     * 发送
+     */
+    public static final String WX_PUBLIC_NEXT_YES = "alo";
 
     //----------------------------------------------漂流瓶服务-----------------------------------
     /**
      * 漂流瓶功能未打开点击通用和功能
      */
-    public static final String BOTTLE_GLOBAL = "a94";
+    public static final String BOTTLE_GLOBAL = "a9h";
     /**
      * 漂流瓶上限判断
      */
-    public static final String BOTTLE_TURE = "xr";
+    public static final String BOTTLE_TURE = "y5";
     /**
      * 漂流瓶扔一个
      */
-    public static final String BOTTLE_THROW = "xe";
+    public static final String BOTTLE_THROW = "xs";
     /**
      * 漂流瓶文本输入框
      */
-    public static final String BOTTLE_CONTENT = "y9";
+    public static final String BOTTLE_CONTENT = "ym";
     /**
      * 切换文字输入
      */
-    public static String WX_ChangeText = "yd";
+    public static String WX_ChangeText = "yr";
 
     //---------------------------------------------一键加群友-------------------------------------
     /**
      * 群聊为空
      */
-    public static final String GR_NULL = "ic";
+    public static final String GR_NULL = "ih";
     /**
      * 群聊条目
      */
-    public static final String GR_LiST_IMG = "in";
+    public static final String GR_LiST_IMG = "it";
     /**
      * 群成员
      */
-    public static final String GR_MEMBER_IMG = "cqq";
+    public static final String GR_MEMBER_IMG = "cx4";
     /**
      * 聊天成员
      */
-    public static final String GR_MEMBER_IMG1 = "ah1";
+    public static final String GR_MEMBER_IMG1 = "ahx";
     /**
      * 群好友返回
      */
-    public static final String GR_Back = "hj";
+    public static final String GR_Back = "hp";
     /**
      * 发送
      */
-    public static final String GR_SEND = "h1";
+    public static final String GR_SEND = "h5";
     /**
      * 选择联系人搜索
      */
-    public static final String GR_CONTACTS = "aqb";
-
-
+    public static final String GR_CONTACTS = "arp";
     //------------------------------------------------白名单-----------------------------------
     /**
      * 白名单输入框
      */
-    public static String WHITE_CONTENT2 = "he";
+    public static String WHITE_CONTENT2 = "hk";
     /**
      * 白名单查询图标
      */
-    public static String WHITE_CONTENT3 = "awt";
+    public static String WHITE_CONTENT3 = "ayf";
     /**
      * 白名单发送
      */
-    public static String WHITE_SEND = "h1";
+    public static String WHITE_SEND = "h5";
     /**
      * 添加朋友侧边
      */
-    public static final String SLIDING = "fy";
+    public static final String SLIDING = "g2";
 
     //------------------------------------------一键发消息-------------------------------------
     /**
      * 一键发消息 联系人聊天界面输入框
      */
-    public static final String WX_AKEYCHAT_EDIT = "aa1";
+    public static final String WX_AKEYCHAT_EDIT = "aaf";
     /**
      * 一键发消息 联系人聊天界面发送按钮
      */
-    public static final String WX_AKEYCHAT_SEND = "aa7";
+    public static final String WX_AKEYCHAT_SEND = "aal";
     /**
      * 一键发消息 联系人聊天界面返回按钮
      */
-    public static final String WX_CHATTING_BACK = "h4";
+    public static final String WX_CHATTING_BACK = "h_";
     /**
      * 一键发消息 通讯录联系人列表
      */
-    public static final String WX_CONTACT_LIST = "iu";
+    public static final String WX_CONTACT_LIST = "iy";
     /**
      * 一键发消息 多少联系人
      */
-    public static final String WX_CONTACT_agp = "alw";
+    public static final String WX_CONTACT_agp = "amz";
 
 
-    //----------------------------------------------一键养号------------------------------------
-    public static final String GC_PIC = "fx";//朋友圈头部相机id
-    public static final String GC_PICSELECT = "bqz";//长按出现我知道按钮
-    public static final String GC_CONFIRM = "h1";//发送
-    public static final String GC_INPUTBOX = "d5g";//发送朋友圈输入框
-    public static final String GR_INPUT = "aa1";//聊天输入框
-    public static final String GR_INSEND = "aa7";//聊天发送
-    public static final String GR_INBACK = "h4";//返回
+    //----------------------------------------------一键养号------------------未修改------------------
+    public static final String GC_PIC = "g1";//朋友圈头部相机id
+    public static final String GC_PICSELECT = "bwu";//长按出现我知道按钮
+    public static final String GC_CONFIRM = "h5";//发送
+    public static final String GC_INPUTBOX = "dba";//发送朋友圈输入框
+    public static final String GR_INPUT = "aaf";//聊天输入框
+    public static final String GR_INSEND = "aal";//聊天发送
+    public static final String GR_INBACK = "h_";//返回
 
    //--------------------------------------------------清粉-------------------------------------
     /**
      * 清粉 首页通讯录
      */
-    public static final String WX_DELETE_DEAD_TONGXUNLU = "c2z";
+    public static final String WX_DELETE_DEAD_TONGXUNLU = "c8t";
     /**
      * 清粉 通讯录页面列表
      */
-    public static final String WX_TONGXUNLU_LIST = "iu";
+    public static final String WX_TONGXUNLU_LIST = "j1";
     /**
      * 清粉 详细资料点击更多出现删除按钮
      */
-    public static final String WX_XIANXIZILIAO_SHANCHU = "fy";
+    public static final String WX_XIANXIZILIAO_SHANCHU = "g2";
     /**
      * 清粉 纤细资料点击删除出现弹吐框删除按钮
      */
-    public static final String WX_XIANXIZILIAO_QUEDING_SHANCHU = "akt";
+    public static final String WX_XIANXIZILIAO_QUEDING_SHANCHU = "alo";
     /**
      * 清粉 纤细资料界面返回按钮
      */
-    public static final String WX_XIANXIZILIAO_BACK = "hj";
+    public static final String WX_XIANXIZILIAO_BACK = "hp";
 
     //------------------------------------------------自动换号-----------------------------------
     //退出当前账号
-    public static final String WX_XIANXIZILIAO_bm3 = "bqw";
+    public static final String WX_XIANXIZILIAO_bm3 = "g2";
     //退出
-    public static final String WX_XIANXIZILIAO_aga = "akt";
+    public static final String WX_XIANXIZILIAO_aga = "alo";
     //用微信号、QQ号、邮箱登录
-    public static final String WX_XIANXIZILIAO_blj = "bqc";
+    public static final String WX_XIANXIZILIAO_blj = "bw6";
     //账号、密码
-    public static final String WX_XIANXIZILIAO_hb = "he";
+    public static final String WX_XIANXIZILIAO_hb = "hk";
     //登录
-    public static final String WX_XIANXIZILIAO_blk = "bqd";
+    public static final String WX_XIANXIZILIAO_blk = "bw7";
     //切换账号
-    public static final String WX_XIANXIZILIAO_hl = "ho";
+    public static final String WX_XIANXIZILIAO_hl = "g2";
     //账号密码错误提示确定按钮
-    public static final String WX_XIANXIZILIAO_bxr = "akt";
+    public static final String WX_XIANXIZILIAO_bxr = "alo";
     //第一次在手机上登陆提示是否开启通讯录
-    public static final String WX_XIANXIZILIAO_bxn = "akt";
+    public static final String WX_XIANXIZILIAO_bxn = "alo";
+    //更多
+    public static final String WX_MORE="bwb";
 }

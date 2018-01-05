@@ -34,6 +34,12 @@ public class OnekeyService extends AccessibilityService {
     private int FriendTime = 10000;//发朋友圈时间延迟
     private int GroupChatTime = 10000;//发消息时间延迟
     private int NearbyTime = 6000;//发消息时间延迟
+
+    private int mNearNum = 2;//人数
+    private int FriendCircleNum = 6; //朋友圈点赞  数量
+    private int DriftBottleNum = 2;  //漂流瓶
+    private int StartFriendNum =1; //发朋友圈
+
     /**
      * 全局
      */
@@ -157,9 +163,9 @@ public class OnekeyService extends AccessibilityService {
                 /**
                  *朋友圈界面
                  */
-                if (event.getClassName().equals("com.tencent.mm.plugin.sns.ui.En_424b8e16")
+                if (event.getClassName().equals("com.tencent.mm.plugin.sns.ui.SnsTimeLineUI")
                         && eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
-                    for (int i = 0; i < 2; i++) {
+                    for (int i = 0; i < FriendCircleNum; i++) {
                         if (isFindIdlistnum(IDConstant.THUMBS_UP) > 0) {
                             if (isFindIdlistnum(IDConstant.THUMBS_UP) >= 2) {
                                 findAndClick(IDConstant.THUMBS_UP, 1);
@@ -307,7 +313,7 @@ public class OnekeyService extends AccessibilityService {
                         && eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
                     copyToBoard("hellow 你好");
                     int m = 0;
-                    while (m < 1) {
+                    while (m < DriftBottleNum) {
                         normalMode(1500);
                         if (isFindText("扔一个")) {
                             normalMode(1000);
@@ -352,8 +358,8 @@ public class OnekeyService extends AccessibilityService {
                         app.setStart(false);
                     }
                 }
-                if (event.getClassName().equals("com.tencent.mm.plugin.sns.ui.En_424b8e16") && eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
-                    if (i < 1) {
+                if (event.getClassName().equals("com.tencent.mm.plugin.sns.ui.SnsTimeLineUI") && eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
+                    if (i < StartFriendNum) {
                         normalMode(2500);
                         if (isFindId(IDConstant.GC_PIC)) {
                             normalMode(800);
@@ -397,7 +403,7 @@ public class OnekeyService extends AccessibilityService {
                     findAndClick(IDConstant.GC_PICSELECT, number);
                     normalMode(1000);
                     findAndClick(IDConstant.GC_CONFIRM, 0);
-                } else if (event.getClassName().equals("com.tencent.mm.plugin.sns.ui.En_c4f742e5") && eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
+                } else if (event.getClassName().equals("com.tencent.mm.plugin.sns.ui.SnsUploadUI") && eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
                     //先随机产生一个下标再获取元素
 
                     int index = (int) (Math.random() * doc.length);
@@ -426,7 +432,7 @@ public class OnekeyService extends AccessibilityService {
 
                     normalMode(1000);
                     pageStatus = LAUNCHER_UI;
-                    pageStatus1 = LAUNCHER_UI;
+                    pageStatus1 = LAUNCHER_UI;   
                     //如果是主界面，并找到发现按钮
                     if (isFindText("通讯录")) {
                         normalMode(1000);
@@ -463,7 +469,7 @@ public class OnekeyService extends AccessibilityService {
                     /**
                      * 群聊界面
                      */
-                } else if (event.getClassName().equals("com.tencent.mm.ui.chatting.En_5b8fbb1e")
+                } else if (event.getClassName().equals("com.tencent.mm.ui.chatting.ChattingUI")
                         && eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
 
                     if (pageStatus == LAUNCHER_UI) {  //向内执行
@@ -671,7 +677,7 @@ public class OnekeyService extends AccessibilityService {
                 /**
                  * 主界面
                  */
-                int mNearTextNum = 2;//人数
+
                 if (app.getStart()) {
                     normalMode(1000);
 
@@ -703,7 +709,7 @@ public class OnekeyService extends AccessibilityService {
 
                     findAndClick(IDConstant.NEARBY_LIST_VIEW, mNearbyNumber);
                     mNearbyNumber++;
-                    if (mNearbyNumber == 2) {
+                    if (mNearbyNumber == mNearNum) {
                         performBackClick(); //退出
                         app.setNearbyPeople(false);//将附近人模块开启状态变成false
                         app.setStart(false);
